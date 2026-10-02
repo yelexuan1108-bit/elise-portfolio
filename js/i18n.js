@@ -137,6 +137,10 @@ const I18N = {
           title: "AI 驱动的交易后审核平台",
           period: "2026.06 – 2026.09",
           link: "https://github.com/yelexuan1108-bit/contract-audit-platform",
+          images: [
+            { src: "assets/shot-audit.jpg", alt: "AI 成交单审核平台主界面：PDF 上传与审核报告" },
+            { src: "assets/shot-policy.jpg", alt: "南向通政策动态监控面板" },
+          ],
           desc: "独立开发基于 Web 的审核工具（Flask + Python）：将业务规则校验、官方模板自动比对与 Claude API 辅助复核相结合，覆盖 4 类产品、3 种语言的审核场景，支持成交单据解析与并发批量上传，从需求梳理到实际使用全流程独立完成。",
         },
         {
@@ -305,6 +309,10 @@ const I18N = {
           title: "AI-Powered Post-Trade Audit Platform",
           period: "06/2026 – 09/2026",
           link: "https://github.com/yelexuan1108-bit/contract-audit-platform",
+          images: [
+            { src: "assets/shot-audit.jpg", alt: "Main UI of the audit platform: PDF upload and audit report" },
+            { src: "assets/shot-policy.jpg", alt: "Southbound Connect policy monitoring dashboard" },
+          ],
           desc: "Independently designed and built a web-based audit tool (Flask + Python) that combines business-rule validation, official-template comparison and Claude API-assisted review — covering 4 product types in 3 languages, with document parsing and concurrent batch upload. Owned the full journey from requirement discovery to production use.",
         },
         {

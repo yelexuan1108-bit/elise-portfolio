@@ -547,6 +547,51 @@ img { display: block; max-width: 100%; }
   box-shadow: var(--shadow-hover);
 }
 
+/* 特色项目卡（带截图，横跨整行） */
+.project-card.featured {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.project-imgs {
+  display: flex;
+  gap: 12px;
+  flex: 1.15;
+  min-width: 0;
+}
+
+.project-imgs a {
+  flex: 1;
+  min-width: 0;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+
+.project-imgs img {
+  width: 100%;
+  aspect-ratio: 14 / 9;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-imgs a:hover img {
+  transform: scale(1.04);
+}
+
 .project-tag {
   align-self: flex-start;
   font-size: 12px;
@@ -717,6 +762,9 @@ img { display: block; max-width: 100%; }
   .intern-points li { font-size: 14px; }
 
   .project-grid { grid-template-columns: 1fr; }
+
+  .project-card.featured { flex-direction: column; gap: 18px; }
+  .project-imgs { flex-direction: column; }
 }
 
 /* ---------- 减少动态效果 ---------- */

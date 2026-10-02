@@ -98,17 +98,39 @@
     box.textContent = "";
     dict.projects.list.forEach(function (item) {
       const card = el("div", "project-card reveal");
-      card.appendChild(el("span", "project-tag", item.tag));
-      card.appendChild(el("h3", "project-title", item.title));
-      card.appendChild(el("p", "project-period", item.period));
-      card.appendChild(el("p", "project-desc", item.desc));
+      const body = el("div", "project-body");
+
+      body.appendChild(el("span", "project-tag", item.tag));
+      body.appendChild(el("h3", "project-title", item.title));
+      body.appendChild(el("p", "project-period", item.period));
+      body.appendChild(el("p", "project-desc", item.desc));
       if (item.link) {
         const link = el("a", "project-link", dict.projects.linkLabel);
         link.href = item.link;
         link.target = "_blank";
         link.rel = "noopener";
-        card.appendChild(link);
+        body.appendChild(link);
       }
+
+      if (item.images) {
+        card.classList.add("featured");
+        const imgs = el("div", "project-imgs");
+        item.images.forEach(function (img) {
+          const a = el("a");
+          a.href = img.src;
+          a.target = "_blank";
+          a.rel = "noopener";
+          const im = el("img");
+          im.src = img.src;
+          im.alt = img.alt;
+          im.loading = "lazy";
+          a.appendChild(im);
+          imgs.appendChild(a);
+        });
+        card.appendChild(imgs);
+      }
+
+      card.appendChild(body);
       box.appendChild(card);
     });
   }
