@@ -11,7 +11,7 @@ const I18N = {
       desc: "叶乐萱（YE Lexuan Elise）个人介绍：香港理工大学会计及金融分析硕士，拥有众安银行、广发证券、厦门银行、国泰君安实习经历与 AI 项目实践，可立即到岗。",
     },
     brand: "叶乐萱 · Elise",
-    nav: { about: "关于我", education: "教育", internships: "实习", projects: "项目", skills: "技能" },
+    nav: { about: "关于我", education: "教育", internships: "实习", projects: "项目", skills: "技能", menu: "打开菜单" },
 
     hero: {
       name: "叶乐萱",
@@ -130,11 +130,13 @@ const I18N = {
 
     projects: {
       heading: "项目经历",
+      linkLabel: "查看代码 ↗",
       list: [
         {
           tag: "AI 项目实践",
           title: "AI 驱动的交易后审核平台",
           period: "2026.06 – 2026.09",
+          link: "https://github.com/yelexuan1108-bit/contract-audit-platform",
           desc: "独立开发基于 Web 的审核工具（Flask + Python）：将业务规则校验、官方模板自动比对与 Claude API 辅助复核相结合，覆盖 4 类产品、3 种语言的审核场景，支持成交单据解析与并发批量上传，从需求梳理到实际使用全流程独立完成。",
         },
         {
@@ -178,7 +180,7 @@ const I18N = {
       desc: "Portfolio of YE Lexuan (Elise): Master of Accounting and Finance Analytics at The Hong Kong Polytechnic University, with internships at ZA Bank, GF Securities, Xiamen Bank and Guotai Jun'an, plus hands-on AI projects. Available immediately.",
     },
     brand: "Elise · 叶乐萱",
-    nav: { about: "About", education: "Education", internships: "Internships", projects: "Projects", skills: "Skills" },
+    nav: { about: "About", education: "Education", internships: "Internships", projects: "Projects", skills: "Skills", menu: "Open menu" },
 
     hero: {
       name: "叶乐萱",
@@ -296,11 +298,13 @@ const I18N = {
 
     projects: {
       heading: "Projects",
+      linkLabel: "View Code ↗",
       list: [
         {
           tag: "AI Practice",
           title: "AI-Powered Post-Trade Audit Platform",
           period: "06/2026 – 09/2026",
+          link: "https://github.com/yelexuan1108-bit/contract-audit-platform",
           desc: "Independently designed and built a web-based audit tool (Flask + Python) that combines business-rule validation, official-template comparison and Claude API-assisted review — covering 4 product types in 3 languages, with document parsing and concurrent batch upload. Owned the full journey from requirement discovery to production use.",
         },
         {

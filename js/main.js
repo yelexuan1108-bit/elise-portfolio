@@ -102,6 +102,13 @@
       card.appendChild(el("h3", "project-title", item.title));
       card.appendChild(el("p", "project-period", item.period));
       card.appendChild(el("p", "project-desc", item.desc));
+      if (item.link) {
+        const link = el("a", "project-link", dict.projects.linkLabel);
+        link.href = item.link;
+        link.target = "_blank";
+        link.rel = "noopener";
+        card.appendChild(link);
+      }
       box.appendChild(card);
     });
   }
@@ -136,6 +143,9 @@
 
     document.getElementById("lang-toggle").textContent =
       lang === "zh" ? "EN" : "中";
+    document
+      .getElementById("menu-toggle")
+      .setAttribute("aria-label", dict.nav.menu);
 
     renderHeroStats(dict);
     renderAboutTags(dict);
@@ -171,6 +181,28 @@
     nodes.forEach(function (n) { revealObserver.observe(n); });
   }
 
+  /* ---------- 移动端汉堡菜单 ---------- */
+  function initMobileMenu() {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    function setOpen(open) {
+      navLinks.classList.toggle("open", open);
+      menuToggle.classList.toggle("open", open);
+      menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+
+    menuToggle.addEventListener("click", function () {
+      setOpen(!navLinks.classList.contains("open"));
+    });
+
+    navLinks.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", function () {
+        setOpen(false);
+      });
+    });
+  }
+
   /* ---------- 初始化 ---------- */
   function init() {
     const saved = localStorage.getItem(LANG_KEY);
@@ -182,6 +214,8 @@
       localStorage.setItem(LANG_KEY, next);
       applyLang(next);
     });
+
+    initMobileMenu();
   }
 
   if (document.readyState === "loading") {
