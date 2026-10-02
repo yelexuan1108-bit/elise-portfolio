@@ -21,7 +21,7 @@ const I18N = {
       resume: "中文简历 PDF",
       resumeEn: "English CV",
       stats: [
-        { num: "4", label: "段实习" },
+        { num: "5", label: "段实习" },
         { num: "4", label: "个项目" },
         { num: "90.24", label: "本科均分" },
         { num: "第 1", label: "专业排名" },
@@ -113,6 +113,18 @@ const I18N = {
             "财报点评洞察：编撰《每日市场快讯》30 期，整合市场要闻与业务洞察，每日 9 点前送达投资顾问团队",
           ],
         },
+        {
+          org: "中国投资贸易洽谈会组委会",
+          role: "展会运营实习生",
+          place: "福建厦门",
+          period: "2022.08 – 2022.09",
+          badge: "投",
+          points: [
+            "活动策划与执行：参与投洽会大型商务活动筹备，负责现场物料、客户接待及流程协调，快速响应现场需求，保障活动顺利落地",
+            "客户沟通与需求洞察：面向企业客户开展现场沟通与接待，主动了解客户需求及关注重点，及时整理反馈并协调后续跟进",
+            "现场运营优化：根据现场客流及客户反馈动态调整接待安排，优化沟通流程与现场体验，积累大型活动运营及项目执行经验",
+          ],
+        },
       ],
     },
 
@@ -176,7 +188,7 @@ const I18N = {
       resume: "Résumé (中文)",
       resumeEn: "English CV",
       stats: [
-        { num: "4", label: "Internships" },
+        { num: "5", label: "Internships" },
         { num: "4", label: "Projects" },
         { num: "90.24", label: "Avg. /100" },
         { num: "Top 1", label: "Class Rank" },
@@ -265,6 +277,18 @@ const I18N = {
           points: [
             "Analysed client needs and guided 15 clients to show investment interest, reactivating 5 dormant clients with new assets; assisted in financial product promotion and client event planning",
             "Collected and cleaned stock/fund data with Excel PivotTables to identify trends and preferences; created the Daily Market Bulletin with key insights for the investment team",
+          ],
+        },
+        {
+          org: "China International Fair for Investment and Trade (CIFIT) · Organizing Committee",
+          role: "Exhibition Operations Intern",
+          place: "Xiamen, Fujian",
+          period: "08/2022 – 09/2022",
+          badge: "C",
+          points: [
+            "Event planning & execution: supported the preparation of a large-scale business event — on-site materials, client reception and process coordination; responded quickly to on-site needs to ensure smooth delivery",
+            "Client communication & insight: communicated with corporate clients on site, proactively understanding their needs and priorities, compiling feedback and coordinating follow-ups",
+            "On-site operations optimisation: dynamically adjusted reception arrangements based on footfall and client feedback, refining the communication flow and on-site experience",
           ],
         },
       ],
