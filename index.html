@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>叶乐萱 Ye Lexuan Elise | 个人介绍</title>
+  <meta name="description" content="叶乐萱（YE Lexuan Elise）个人介绍：香港理工大学会计及金融分析硕士，拥有众安银行、广发证券、厦门银行、国泰君安实习经历与 AI 项目实践，可立即到岗。">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" data-i18n="brand">叶乐萱 · Elise</a>
+      <nav class="nav-links">
+        <a href="#about" data-i18n="nav.about">关于我</a>
+        <a href="#education" data-i18n="nav.education">教育</a>
+        <a href="#internships" data-i18n="nav.internships">实习</a>
+        <a href="#projects" data-i18n="nav.projects">项目</a>
+        <a href="#skills" data-i18n="nav.skills">技能</a>
+        <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="top" class="hero">
+      <img class="hero-photo" src="assets/photo.jpg" alt="叶乐萱的证件照">
+      <h1 class="hero-name" data-i18n="hero.name">叶乐萱</h1>
+      <p class="hero-name-en">YE Lexuan Elise</p>
+      <p class="hero-tagline" data-i18n="hero.tagline">数据驱动的产品与运营人 · 金融 × AI</p>
+      <p class="hero-sub" data-i18n="hero.sub">香港理工大学 会计及金融分析硕士 · 可立即到岗</p>
+      <div class="hero-stats" id="hero-stats"></div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:yelexuan1108@163.com" data-i18n="hero.email">邮件联系我</a>
+        <a class="btn btn-ghost" href="assets/叶乐萱简历.pdf" target="_blank" rel="noopener" data-i18n="hero.resume">中文简历 PDF</a>
+        <a class="btn btn-ghost" href="assets/YE_Lexuan_CV.pdf" target="_blank" rel="noopener" data-i18n="hero.resumeEn">English CV</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2 class="section-title" data-i18n="about.heading">关于我</h2>
+        <div class="about-card">
+          <p data-i18n="about.p1"></p>
+          <p data-i18n="about.p2"></p>
+          <p data-i18n="about.p3"></p>
+          <div class="about-tags" id="about-tags"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section section-alt">
+      <div class="wrap">
+        <h2 class="section-title" data-i18n="education.heading">教育经历</h2>
+        <div id="edu-list" class="edu-list"></div>
+        <div class="honors-card" id="honors"></div>
+      </div>
+    </section>
+
+    <!-- Internships -->
+    <section id="internships" class="section">
+      <div class="wrap">
+        <h2 class="section-title" data-i18n="internships.heading">实习经历</h2>
+        <div id="intern-list" class="timeline"></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
+      <div class="wrap">
+        <h2 class="section-title" data-i18n="projects.heading">项目经历</h2>
+        <div id="project-grid" class="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="wrap">
+        <h2 class="section-title" data-i18n="skills.heading">专业技能</h2>
+        <div class="skill-group">
+          <h3 class="skill-subtitle" data-i18n="skills.certTitle">证书与语言</h3>
+          <div id="skill-certs" class="chips"></div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-subtitle" data-i18n="skills.toolsTitle">工具与技能</h3>
+          <div id="skill-tools" class="chips"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <p data-i18n="footer.line">欢迎通过邮件联系我</p>
+    <a class="footer-email" href="mailto:yelexuan1108@163.com">yelexuan1108@163.com</a>
+    <p class="footer-copy">© 2026 叶乐萱 · YE Lexuan Elise</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
