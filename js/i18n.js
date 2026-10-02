@@ -22,7 +22,7 @@ const I18N = {
       resumeEn: "English CV",
       stats: [
         { num: "4", label: "段实习" },
-        { num: "5", label: "个项目" },
+        { num: "4", label: "个项目" },
         { num: "90.24", label: "本科均分" },
         { num: "第 1", label: "专业排名" },
       ],
@@ -143,12 +143,6 @@ const I18N = {
           period: "2024.09 – 2025.01",
           desc: "分析 200+ 份问卷与社媒反馈，挖掘美发消费者在服务形式、产品使用与个性化上的需求；提出「上门美发服务 + L'Oréal Prat 小程序」一体化方案，设计端到端服务流程与用户体验，并给出商业化建议。",
         },
-        {
-          tag: "效率工具",
-          title: "秋招网申填写与投递管理 Chrome 扩展",
-          period: "2026",
-          desc: "面向校招的 Chrome 扩展（Manifest V3）：网申表单快速填报、岗位一键智能收录、投递追踪看板（阶段漏斗、统计与搜索）、简历资料库与离线 OCR 截图识别，100% 本地存储。自用开发，全流程提效。",
-        },
       ],
     },
 
@@ -183,7 +177,7 @@ const I18N = {
       resumeEn: "English CV",
       stats: [
         { num: "4", label: "Internships" },
-        { num: "5", label: "Projects" },
+        { num: "4", label: "Projects" },
         { num: "90.24", label: "Avg. /100" },
         { num: "Top 1", label: "Class Rank" },
       ],
@@ -302,12 +296,6 @@ const I18N = {
           title: "L'Oréal BRANDSTORM",
           period: "09/2024 – 01/2025",
           desc: "Analysed 200+ survey responses and social media feedback to uncover haircare consumers' needs in service formats, product usage and personalisation; proposed an integrated 'at-home hairdressing service + L'Oréal Prat mini-program' model with end-to-end service flow and UX design, plus commercialisation suggestions.",
-        },
-        {
-          tag: "Productivity Tool",
-          title: "Job-Application Tracker Chrome Extension",
-          period: "2026",
-          desc: "A Chrome extension (Manifest V3) for campus recruitment: one-click form filling, smart job capture, an application dashboard (stage funnel, stats and search), a CV data library and offline OCR recognition — 100% local storage. Built for personal use to streamline applications.",
         },
       ],
     },
